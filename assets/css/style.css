@@ -1,0 +1,14 @@
+body{
+    padding: 30px;
+}
+a:hover, a:focus{
+    text-decoration: none;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus{
+    outline: 0;
+    outline-offset: 0;
+}
+textarea{
+    resize: none;
+    min-height: 200px;
+}

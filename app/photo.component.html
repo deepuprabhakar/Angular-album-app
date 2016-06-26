@@ -1,0 +1,9 @@
+<photo>
+    <h3>Album</h3>
+    <div class="alert alert-info text-center text-muted" *ngIf="isLoading" >
+        Loading...
+    </div>
+    <div *ngIf="!isLoading" >
+        <img *ngFor="#photo of photos" src="{{ photo.thumbnailUrl }}">
+    </div>
+</photo>

@@ -1,0 +1,15 @@
+<albums>
+    <div class="alert alert-info text-center text-muted" *ngIf="isLoading" >
+        Loading...
+    </div>
+    <div *ngIf="!isLoading" >
+        <h3>Albums</h3>
+        <ul>
+            <li *ngFor="#album of albums" >
+                <a [routerLink]="['Album', { id: album.id }]">
+                    {{ album.title }}
+                </a>
+            </li>
+        </ul>
+    </div>
+</albums>
